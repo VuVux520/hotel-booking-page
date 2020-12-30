@@ -4,14 +4,13 @@ import Banner from '../components/Banner';
 import { Link } from 'react-router-dom';
 import { RoomContext } from '../store/context';
 import StyledCover from '../components/StyledCover';
-import {Modal, Row, Col} from "antd" 
+import {Modal} from "antd" 
 import 'react-inner-image-zoom/lib/InnerImageZoom/styles.css';
 //@ts-ignore
 import InnerImageZoom from 'react-inner-image-zoom';
 import {
     Form,
     Input,
-    Button,
     DatePicker
   } from 'antd';
   const { RangePicker } = DatePicker;
@@ -104,7 +103,9 @@ export default class SingleRoom extends Component<IPropsSingleRoom, IStateSingle
                     title="MAKE A RESERVATION"
                     centered
                     visible={this.state.isVisible}
-                    onOk={()=>this.setState({...this.state, isVisible: false})}> 
+                    onOk={()=>this.setState({...this.state, isVisible: false})}
+                    okText="Book this room"
+                    > 
     <Form
     labelCol={{ span: 4}}
     wrapperCol={{ span: 18 }}

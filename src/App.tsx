@@ -8,6 +8,8 @@ import Rooms from './pages/Rooms';
 import SingleRoom from './pages/SingleRoom';
 import ErrorPage from './pages/ErrorPage';
 import BookingPage from './pages/BookingPage'
+import firebase from 'firebase';
+import {firebaseConfig} from './store/config';
 const App: React.FC = () => {
   return (
     <React.Fragment>
