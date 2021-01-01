@@ -30,6 +30,7 @@ export default class Navbar extends Component<{}, IStateNavbar> {
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/rooms">Rooms</Link></li>
                         <li><Link to="/booking-page">Booking</Link></li>
+                        <li><Link to="/servicepage">Contact us</Link></li>
                     </ul>
                 </div>
             </nav>
