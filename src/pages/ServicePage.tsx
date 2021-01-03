@@ -18,9 +18,9 @@ const ServicePage: React.FC = () => {
             <form className="form" id="form-1">
                 <h3 className="heading">CONTACT US</h3>
                 <div className="note-container">
-                    <h4 className="heading-note">We will get back to you personally during business hours.</h4>
-                    <h4 className="heading-note">Customer Service Language : English, Spain, Russian, VietNamese</h4>
-                    <h4 className="heading-note">Our business hours are from 9:00am to 6:00pm (GMT +7) Monday to Friday.</h4>
+                    <h4 className="heading-note">We will get back to you personally.</h4>
+                    <h4 className="heading-note">Customer Service Language : English, VietNamese</h4>
+                    <h4 className="heading-note">We will contact you as soon as posible.</h4>
                 </div>
                <div className="content-container">
                     <div className="contactus-form-1 contactus-form">
@@ -55,8 +55,6 @@ const ServicePage: React.FC = () => {
                     type="text"
                     placeholder="Please state your problem"
                 />
-
-                
                 </div>
                 <div className="contactus-form-4 contactus-form">
                 <label className="form-message">
