@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
-import { FaCocktail, FaHiking, FaShuttleVan, FaBeer } from 'react-icons/fa';
+import FreeBreakfastIcon from '@material-ui/icons/FreeBreakfast';
+import LocalAirportIcon from '@material-ui/icons/LocalAirport';
+import WifiIcon from '@material-ui/icons/Wifi';
+import LocalLaundryServiceIcon from '@material-ui/icons/LocalLaundryService';
 import Title from './Title';
-
+import LocalBarIcon from '@material-ui/icons/LocalBar';
+import HotTubIcon from '@material-ui/icons/HotTub';
+import PoolIcon from '@material-ui/icons/Pool';
+import FitnessCenterIcon from '@material-ui/icons/FitnessCenter';
 interface Service {
     icon: JSX.Element | string;
     title: string;
-    info: string;
 }
 
 interface IStateServices {
@@ -17,24 +22,36 @@ export default class Services extends Component<{}, IStateServices> {
     public readonly state: Readonly<IStateServices> = {
         services: [
             {
-                icon: <FaCocktail />,
-                title: "free cocktails",
-                info: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+                icon: <FreeBreakfastIcon />,
+                title: "Free Breakfast"
             },
             {
-                icon: <FaHiking />,
-                title: "endless hiking",
-                info: " Lorem It was popularised in the 1960s with the release of Letraset sheets containing."
+                icon: <WifiIcon />,
+                title: "Free Wi-Fi In All Rooms!",
             },
             {
-                icon: <FaShuttleVan />,
-                title: "free shuttles",
-                info: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+                icon: <LocalAirportIcon/>,
+                title: "Airport Transfer",
             },
             {
-                icon: <FaBeer />,
-                title: "strongest beers",
-                info: "Lorem There are many variations of passages of Lorem Ipsum available, but the majority form."
+                icon: <LocalLaundryServiceIcon />,
+                title: "Daily Housekeeping",
+            },
+            {
+                icon: <LocalBarIcon />,
+                title: "Bar",
+            },
+            {
+                icon: <HotTubIcon />,
+                title: "Hot Tub",
+            },
+            {
+                icon: <PoolIcon />,
+                title: "Swimming Pool [Outdoor]",
+            },
+            {
+                icon: <FitnessCenterIcon />,
+                title: "Fitness Center",
             },
         ]
     }
@@ -50,7 +67,6 @@ export default class Services extends Component<{}, IStateServices> {
                             <article key={index} className="service">
                                 <span>{item.icon}</span>
                                 <h6>{item.title}</h6>
-                                <p>{item.info}</p>
                             </article>
                         )
                     })}

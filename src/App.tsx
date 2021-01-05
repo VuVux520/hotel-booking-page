@@ -7,8 +7,7 @@ import Rooms from './pages/Rooms';
 import SingleRoom from './pages/SingleRoom';
 import ErrorPage from './pages/ErrorPage';
 import BookingPage from './pages/BookingPage'
-import firebase from 'firebase';
-import {firebaseConfig} from './store/configFirebase';
+import Bottom from './components/Bottom';
 import ServicePage from './pages/ServicePage';
 const App: React.FC = () => {
   return (
@@ -22,6 +21,7 @@ const App: React.FC = () => {
         <Route exact path="/servicepage" component={ServicePage}/>
         <Route component={ErrorPage} />
       </Switch>
+      <Bottom/>
     </React.Fragment>
   );
 }

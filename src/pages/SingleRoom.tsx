@@ -19,6 +19,8 @@ interface IPropsSingleRoom {
     getRoom: (slug: string) => any;
 }
 
+
+
 interface IStateSingleRoom {
     slug: string;
     defaultbcg: string;
@@ -122,9 +124,10 @@ export default class SingleRoom extends Component<IPropsSingleRoom, IStateSingle
         <Form.Item label="Date: ">
         <RangePicker/>
         </Form.Item>
-    </Form>
+        </Form>
           </Modal>
             </React.Fragment>
+
         )
     }
 }

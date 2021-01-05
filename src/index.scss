@@ -184,6 +184,13 @@ h6 {
 
 /* end of navbar */
 
+.footer {
+    flex-shrink: 0;
+    text-align: center;
+    background-color: lightcoral;
+    color: white;
+}
+
 
 /* Hero */
 
@@ -219,6 +226,7 @@ h6 {
 
 .banner h1 {
     font-size: 2.5rem;
+    color: whitesmoke;
 }
 
 .banner div {
@@ -231,6 +239,9 @@ h6 {
 .banner p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
+    color: #eb9a2a;
+    font-family: chilanka, segoe script, purisa, comic sans ms, cursive;
+    font-weight: bolder;
 }
 
 @media screen and (min-width: 576px) {
