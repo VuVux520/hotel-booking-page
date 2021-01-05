@@ -8,7 +8,7 @@ import SingleRoom from './pages/SingleRoom';
 import ErrorPage from './pages/ErrorPage';
 import BookingPage from './pages/BookingPage'
 import firebase from 'firebase';
-import {firebaseConfig} from './store/config';
+import {firebaseConfig} from './store/configFirebase';
 import ServicePage from './pages/ServicePage';
 const App: React.FC = () => {
   return (
