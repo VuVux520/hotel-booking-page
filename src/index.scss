@@ -117,6 +117,27 @@ h6 {
     z-index: 1;
 }
 
+.navbar-right {
+    display: inline;
+    text-decoration: none;
+    padding: 1rem 0;
+    color: var(--mainWhite);
+    transition: var(--mainTransition);
+    text-align: center;
+    font-size: 0.5rem;
+    font-weight: 600;
+    margin-left: 30%;
+}
+
+.title-right {
+    display: inline;
+    padding: 1rem 0;
+    color: var(--mainWhite);
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
 .nav-header {
     display: flex;
     justify-content: space-between;
@@ -187,7 +208,7 @@ h6 {
 .footer {
     flex-shrink: 0;
     text-align: center;
-    background-color: lightcoral;
+    background: #222;
     color: white;
 }
 
@@ -239,9 +260,8 @@ h6 {
 .banner p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
-    color: #eb9a2a;
-    font-family: chilanka, segoe script, purisa, comic sans ms, cursive;
-    font-weight: bolder;
+    color: whitesmoke;
+    font-weight: bold;
 }
 
 @media screen and (min-width: 576px) {
@@ -404,7 +424,7 @@ h6 {
     top: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.8);
-    color: var(--mainWhite);
+    color: white;
     padding: 0.3rem 0.6rem 0.5rem;
     border-bottom-right-radius: 1rem;
     font-size: 0.5rem;
@@ -416,6 +436,8 @@ h6 {
     margin-bottom: 0;
     font-size: 0.9rem;
     font-weight: 300;
+    color: white;
+    font-weight: bold;
     letter-spacing: var(--mainSpacing);
 }
 

@@ -7,7 +7,7 @@ const ServicePage: React.FC = () => {
         <React.Fragment>
             <Cover>
                 <Banner
-                    title = "Our Service"
+                    title = "Contact Us"
                 >
                     <Link to ="/" className="btn-primary">
                         Return Home

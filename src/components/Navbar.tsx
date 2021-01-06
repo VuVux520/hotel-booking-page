@@ -2,10 +2,12 @@ import React, { Component } from 'react';
 import Logo from '../assets/images/logo1.jpeg';
 import { FaAlignRight } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import CallIcon from '@material-ui/icons/Call';
 
 interface IStateNavbar {
     isOpen: boolean;
 }
+
 
 export default class Navbar extends Component<{}, IStateNavbar> {
 
@@ -32,6 +34,10 @@ export default class Navbar extends Component<{}, IStateNavbar> {
                         <li><Link to="/booking-page">Booking</Link></li>
                         <li><Link to="/servicepage">Contact us</Link></li>
                     </ul>
+                    <div className="navbar-right">
+                        <CallIcon/>
+                        <h2 className="title-right">1800-0909</h2>
+                    </div>
                 </div>
             </nav>
         )
